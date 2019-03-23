@@ -1,0 +1,144 @@
+@mixin container($width, $height, $color ) {
+    width: $width;
+    height: $height;
+    background-color: $color;
+}
+@mixin flex {
+    display: flex;
+    display:  -webkit-flex;
+}
+@mixin flexContainer{
+    @include flex;
+    justify-content: space-around;
+    align-items:center;
+
+}
+
+@mixin flexElement ($element, $width, $height, $color  ) {
+    width: $width;
+    height: $height;
+    @if $element =="button" 
+    {
+        border-color : $color ;
+        border-width: 5px;
+        
+    }
+    @else if $element =="input" 
+    {
+        background-color: $color;
+    }
+}
+
+.flexStyleButton{
+    @include flexElement ("button", 500px, 100px,   violet  )
+}
+
+.flexStyleInput{
+    @include flexElement ("input", 100px, 100px,   red  )
+}
+
+body{
+    background-color: $body-color;
+}
+
+.hero-cover
+{
+    height: 350px;
+    width: 100%;
+    background-image: url($main-image) ;
+    background-position:  $center-vertical;
+    background-repeat:  no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 1px; 
+
+}
+
+.div-Busqueda3
+{
+    align-items: $center-vertical;
+    display:  block;
+    height: 350px;
+    width: 100%;
+    padding-top: 15vh;
+    div{
+        h4 
+            {
+                color: #ffffff;
+                border-color: burlywood;
+                font-family: 'Indie Flower', cursive;
+                font-size: 30px;
+                padding-left: 17vw;
+            } 
+    }
+
+ }
+ .div-InputBusqueda
+ {
+    @include flexContainer;
+     background-color: white;
+     border-color: #4D2C91;
+     border-radius: 10px;
+     box-shadow:  8px 8px 5px rgba(0, 0, 0, 0.397);
+     margin-left: 15vw;
+     margin-right: 15vw;;
+     width: 800px;
+     
+     div{
+        @include flexContainer;
+
+        div{
+            input{
+                width: 100%;
+                height: 35px;
+                border-color: transparent;
+                font-size: 18px;
+                outline: none;
+                border-radius: 5px;
+            }
+            img{
+                width: 50px;
+                height: 50px;
+
+            }
+        }
+
+     }
+ }
+
+
+
+// Mixin
+
+
+.caja-1{
+    @include container(200px,200px, $blue )
+
+}
+.caja-2{
+    @include container(200px,200px, red )
+}
+
+.container-flex{
+    @include flex;
+    justify-content: space-around;
+    align-items:center;
+
+}
+
+
+// Herencia
+%button{
+    height: $bmd;
+    width: $blg;
+}
+
+.blue-button{
+    @extend %button;
+    background-color: $blue;
+}
+
+.red-button{
+    @extend %button;
+    background-color:  red;
+}

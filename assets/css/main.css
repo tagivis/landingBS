@@ -4,14 +4,16 @@
     padding-bottom: 5px;
 
 }
+
 .divider{
     height: 10px;
 	border: 0;
 	box-shadow: 0 10px 10px -10px #8c8b8b inset;
     margin-left: 10px;
     margin-right: 10px;
+
 }
-#home-cover{
+/* #home-cover{
     height: 350px;
     width: 100%;
     background-image: url("https://picsum.photos/800/400/?gravity=east") ;
@@ -21,10 +23,10 @@
     margin: 0;
     padding: 1px; 
     
-}
+} */
 
 
-.div-Busqueda
+/* .div-Busqueda
 {
     align-items: center;
     display:  block;
@@ -41,8 +43,8 @@
     font-family: 'Indie Flower', cursive;
     font-size: 30px;
     padding-left: 17vw;
-} 
-
+}  */
+/* 
 .div-InputBusqueda
 {
     display: flex;
@@ -78,7 +80,7 @@
     width: 50px;
     height: 50px;
     
-}  
+}   */
 .carousel {
         
     /* width: 500px; */
@@ -95,7 +97,17 @@ h3{
     font-weight: bold; 
     margin-left: 10px;
 }
+.imageFooter
+{
+    height: 50px;
+}
+.div-signUp
+{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
 
+}
 @media (min-width: 768px) and (max-width: 1024px)
 {
     /*body{
@@ -117,6 +129,9 @@ h3{
     nav>p{
         font-weight: bold;
     } 
+    footer{
+        display: none;
+    }
     
     #home-cover {
         height: 150px;
@@ -149,7 +164,10 @@ h3{
         /* background-color: black; */
         display: table;
     }
-    
+    #navbarSupportedContent
+    {
+        background-color: #f8f9fa; 
+    }
 
   
                     

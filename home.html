@@ -11,10 +11,23 @@
     <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- <link rel="stylesheet" href="./assets/css/main.css"> -->
+    
+    <link rel="stylesheet" href="./assets/css/home.css">
+
     <title>BEDU Travels</title>
 </head>
 <body>
+    <section class="container-flex">
+            <div>
+                <input type="input" class="flexStyleInput">
+            </div>
+            <div>
+                <input type="button" class="flexStyleButton">
+            </div>
+           
+    </section> 
+   
     <!-- NavBar -->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -28,11 +41,9 @@
         </button>
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
             <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
-                
-            </li>
+           
             <li class="nav-item">
                 <a class="nav-link" href="#">Registrate</a>
             </li>
@@ -46,26 +57,24 @@
                 <a class="dropdown-item" href="#">Recomendaciones</a>
                 </div>
             </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li> -->
             </ul>
             <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
             </form>
+       
         </div>
     </nav>
     <!--NavBar-->
 
     <!--Home Cover-->
-    <section id="home-cover">
-        <div class="div-Busqueda" >
+    <section class="hero-cover">
+        <div class="div-Busqueda3" >
             <div>
                 <h4>Mi proximo destino es.....</h4>
             </div>
-            <div class="div-div-Busqueda">
-                <div class="div-InputBusqueda">
+            <div class="div-InputBusqueda" >
+                <div >
                     <input type="text">
                     <img src="assets/images/baseline-search-24px.svg">
                 </div>
@@ -226,7 +235,7 @@
     <footer class="container py-5">
             <div class="row">
                 <div class="col-12 col-md">
-                <img src="./assets/images/pi-globe-3.svg" alt="">
+                <img class="imageFooter" src="./assets/images/pi-globe-3.svg" alt="">
                 <small class="d-block mb-3 text-muted">© 2017-2018</small>
                 </div>
                 <div class="col-6 col-md">
