@@ -84,23 +84,25 @@ body {
   box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.397);
   margin-left: 15vw;
   margin-right: 15vw;
-  width: 800px;
 }
 .div-InputBusqueda div {
+  width: 100%;
   display: flex;
   display: -webkit-flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
-.div-InputBusqueda div div input {
+.div-InputBusqueda div input {
   width: 100%;
   height: 35px;
   border-color: transparent;
   font-size: 18px;
   outline: none;
   border-radius: 5px;
+  width: inherit;
 }
-.div-InputBusqueda div div img {
+.div-InputBusqueda div img {
   width: 50px;
   height: 50px;
 }
@@ -135,6 +137,55 @@ body {
 
 .red-button {
   background-color: red;
+}
+
+.imageFooter {
+  height: 50px;
+}
+
+.carousel {
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+.section-title {
+  width: 100%;
+  align-items: center;
+}
+
+.cardDestinations {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  background-color: red;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.cardLeft {
+  width: 50%;
+  background-color: blue;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cardRight {
+  width: 50%;
+  background-color: green;
+}
+
+.cardBig img {
+  height: 150px;
+}
+
+.cardSmall img {
+  width: 80%;
+  height: 80px;
 }
 
 /*# sourceMappingURL=home.css.map */
