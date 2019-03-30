@@ -81,12 +81,12 @@
     height: 50px;
     
 }   */
-.carousel {
+/* .carousel {
         
-    /* width: 500px; */
+    
     padding-left: 20vw;
     padding-right: 20vw;
-}
+} */
 h1{
     font-weight: bold;
     font-family: 'Baloo Chettan', cursive;
@@ -97,10 +97,10 @@ h3{
     font-weight: bold; 
     margin-left: 10px;
 }
-.imageFooter
+/* .imageFooter
 {
     height: 50px;
-}
+} */
 .div-signUp
 {
     margin-left: 20%;
